@@ -1,15 +1,12 @@
 package dk.lyngby.dto;
 
-import dk.lyngby.model.Room;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 @NoArgsConstructor
 @Getter
 public class RoomDto {
-    private Integer roomNumber;
+/*    private Integer roomNumber;
     private Integer roomPrice;
     private Room.RoomType roomType;
 
@@ -43,5 +40,5 @@ public class RoomDto {
         result = 31 * result + (getRoomPrice() != null ? getRoomPrice().hashCode() : 0);
         result = 31 * result + (getRoomType() != null ? getRoomType().hashCode() : 0);
         return result;
-    }
+    }*/
 }

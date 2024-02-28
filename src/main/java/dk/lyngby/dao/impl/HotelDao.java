@@ -1,13 +1,13 @@
 package dk.lyngby.dao.impl;
 
 import dk.lyngby.exception.ApiException;
-import dk.lyngby.model.Hotel;
+
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
 
-@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
+/*@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public class HotelDao implements dk.lyngby.dao.IDao<Hotel, Integer> {
 
     private static HotelDao instance;
@@ -84,5 +84,5 @@ public class HotelDao implements dk.lyngby.dao.IDao<Hotel, Integer> {
             var person = em.find(Hotel.class, integer);
             return person != null;
         }
-    }
-}
+    }*/
+

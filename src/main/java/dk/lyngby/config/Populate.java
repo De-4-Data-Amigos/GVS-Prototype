@@ -1,23 +1,12 @@
 package dk.lyngby.config;
 
 
-import dk.lyngby.dto.PlantDTO;
-import dk.lyngby.dto.ResellerDTO;
-import dk.lyngby.model.Hotel;
-import dk.lyngby.model.Plant;
-import dk.lyngby.model.Reseller;
-import dk.lyngby.model.Room;
 import jakarta.persistence.EntityManagerFactory;
-import org.jetbrains.annotations.NotNull;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 public class Populate {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 
         EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
         ResellerDTO rDTO1 = new ResellerDTO(1, "Lyngby Plantecenter", "Firskovvej 18", "+45 33212334", new HashSet<>());
@@ -52,5 +41,5 @@ public class Populate {
             em.persist(r3);
             em.getTransaction().commit();
         }
-    }
+    }*/
 }

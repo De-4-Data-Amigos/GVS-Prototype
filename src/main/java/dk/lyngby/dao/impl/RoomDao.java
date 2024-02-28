@@ -1,15 +1,7 @@
 package dk.lyngby.dao.impl;
 
 
-import dk.lyngby.model.Hotel;
-import dk.lyngby.model.Room;
-import jakarta.persistence.EntityManagerFactory;
-import lombok.NoArgsConstructor;
-
-import java.util.List;
-import java.util.function.Function;
-
-@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
+/*@NoArgsConstructor(access = lombok.AccessLevel.PRIVATE)
 public class RoomDao implements dk.lyngby.dao.IDao<Room, Integer> {
 
     private static RoomDao instance;
@@ -107,5 +99,6 @@ public class RoomDao implements dk.lyngby.dao.IDao<Room, Integer> {
             return hotel.getRooms().stream().anyMatch(r -> r.getRoomNumber().equals(roomNumber));
         }
     }
+    }*/
 
-}
+

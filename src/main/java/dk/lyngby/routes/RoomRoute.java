@@ -1,13 +1,12 @@
 package dk.lyngby.routes;
 
-import dk.lyngby.controller.impl.RoomController;
 import io.javalin.apibuilder.EndpointGroup;
 
 import static io.javalin.apibuilder.ApiBuilder.*;
 
 public class RoomRoute {
 
-    private final RoomController roomController = new RoomController();
+   /* //private final RoomController roomController = new RoomController();
 
     protected EndpointGroup getRoutes() {
 
@@ -20,5 +19,5 @@ public class RoomRoute {
                 delete("/{id}", roomController::delete);
             });
         };
-    }
+    }*/
 }
