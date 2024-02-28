@@ -23,7 +23,7 @@
         <issuer>cphbusiness.dk</issuer>
         <token.expiration.time>3600000</token.expiration.time>
         <!--  DB    -->
-        <db.name>pets</db.name>
+        <db.name>mock_exam_two</db.name>
         <db.username>postgres</db.username>
         <db.password>postgres</db.password>
         <db.connection.string>jdbc:postgresql://db:5432/</db.connection.string>

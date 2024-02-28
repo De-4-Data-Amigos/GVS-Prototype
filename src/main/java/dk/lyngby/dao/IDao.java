@@ -10,7 +10,7 @@ public interface IDao<T, D> {
     List<T> readAll() throws ApiException;
     T create(T t) throws ApiException;
     T update(D d, T t) throws ApiException;
-    void delete(D d) throws ApiException;
+    boolean delete(D d) throws ApiException;
     //boolean validatePrimaryKey(D d);
 
 }

@@ -18,7 +18,8 @@ public class Routes {
     private int count = 0;
 
     private final Logger LOGGER = LoggerFactory.getLogger(Routes.class);
-    //private final PlantRoutes plantRoutes = new PlantRoutes();
+    private final EmployeeRoute employeeRoute = new EmployeeRoute();
+    private final ManagerRoute managerRoute = new ManagerRoute();
 
     private void requestInfoHandler(Context ctx) {
         String requestInfo = ctx.req().getMethod() + " " + ctx.req().getRequestURI();
@@ -30,7 +31,8 @@ public class Routes {
             app.before(this::requestInfoHandler);
 
             app.routes(() -> {
-               // path("/", plantRoutes.getRoutes());
+                path("/", employeeRoute.getRoutes());
+                path("/", managerRoute.getRoutes());
             });
 
             app.after(ctx -> LOGGER.info(" Request {} - {} was handled with status code {}", count++, ctx.attribute("requestInfo"), ctx.status()));

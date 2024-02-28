@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class EmployeeDaoTest {
+class EmployeeDAOTest {
  /*   private Employee employee;
 
     @BeforeEach
@@ -17,8 +17,8 @@ class EmployeeDaoTest {
     @Test
     public void testCreateEmployeeNotNull() throws ApiException {
         // Arrange
-        EmployeeDao employeeDao = new EmployeeDao();
-        Employee employee = new Employee("John Doe", "Software Engineer", "john@example.com", "123456789", "password123", "Employee");
+        EmployeeDAO employeeDao = new EmployeeDAO();
+        Employee employee = new Employee("John Doe", "Mama","employee","john@example.com", 123456789 );
 
         // Act
         Employee result = employeeDao.create(employee);
@@ -33,14 +33,14 @@ class EmployeeDaoTest {
     public void testCreateEmployeeNameNotNull() throws ApiException {
         // Arrange
         String name = "Marco";
-        EmployeeDao employeeDao = new EmployeeDao();
-        Employee employee = new Employee(name, "Software Engineer", "john@example.com", "123456789", "password123", "Employee");
+        EmployeeDAO employeeDao = new EmployeeDAO();
+        Employee employee = new Employee("John", "Mama","employee","john@example.com", 123456789 );
 
         // Act
         Employee result = employeeDao.create(employee);
 
         // Assert
-        assertNotNull(result.getName(), "Name should not be null");
+        assertNotNull(result.getFirstName(), "Name should not be null");
 
     }
 
@@ -48,8 +48,8 @@ class EmployeeDaoTest {
     public void testCreateEmployeeTitleNotNull() throws ApiException {
         // Arrange
         String title = "Software Engine";
-        EmployeeDao employeeDao = new EmployeeDao();
-        Employee employee = new Employee("John Doe", title, "john@example.com", "123456789", "password123", "Employee");
+        EmployeeDAO employeeDao = new EmployeeDAO();
+        Employee employee = new Employee("John", "Mama","employee","john@example.com", 123456789 );
 
         // Act
         Employee result = employeeDao.create(employee);

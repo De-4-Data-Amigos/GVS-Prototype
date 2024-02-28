@@ -1,22 +1,38 @@
-// Hotel API
 
-GET {{url}}/plants
+GET {{url}}/employee
+Content-Type: application/json
 
+###
 
-GET {{url}}/plants/2
+GET {{url}}/employee/1
+Content-Type: application/json
 
+###
 
-GET {{url}}/plants/type/Rose
-
-
-POST {{url}}/plants
+POST {{url}}/employee
 Content-Type: application/json
 
 {
-  "plantType":"Rose",
-  "name": "Gallicanae",
-  "maxHeight": 350,
-  "price": 299.0,
-  "resellerId": 2
+  "firstName": "Ziko",
+  "lastName": "Jaki",
+  "title": "Employees",
+  "email": "din@hot.dk",
+  "phone": 54788545,
+  "managerId": 1
+}
+
+
+###
+
+PUT {{url}}/employee/1
+Content-Type: application/json
+
+{
+  "employeeId": 1,
+  "firstName": "Marco",
+  "lastName": "Polloyee",
+  "title": "Developer",
+  "email": "dinlille@hot.dk",
+  "phone": 54658545
 }
 
