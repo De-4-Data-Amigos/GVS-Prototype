@@ -1,0 +1,22 @@
+// Hotel API
+
+GET {{url}}/plants
+
+
+GET {{url}}/plants/2
+
+
+GET {{url}}/plants/type/Rose
+
+
+POST {{url}}/plants
+Content-Type: application/json
+
+{
+  "plantType":"Rose",
+  "name": "Gallicanae",
+  "maxHeight": 350,
+  "price": 299.0,
+  "resellerId": 2
+}
+
